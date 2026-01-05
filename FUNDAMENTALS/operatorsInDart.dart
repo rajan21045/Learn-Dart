@@ -159,19 +159,18 @@ void main() {
   // is!    : Returns true if the object is not of the specified type.
   // as     : Used for typecasting.
 
-// 8. Type Test Operators
-print("\n");
-print("Type Test Operators:");
+  // 8. Type Test Operators
+  print("\n");
+  print("Type Test Operators:");
 
-var value = 100;
-print("value is int: ${value is int}"); // true
-print("value is! String: ${value is! String}"); // true
+  dynamic value = 100;
+  print("value is int: ${value is int}"); // true
+  print("value is! String: ${value is! String}"); // true
 
-var str = "Hello, Dart!";
-print("str is! String: ${str is! String}"); // false
-print("str is String: ${str is String}"); // true
+  dynamic str = "Hello, Dart!";
+  print("str is! String: ${str is! String}"); // false
+  print("str is String: ${str is String}"); // true
 
-double mm = value.toDouble();
-print("value as double: $mm"); // 100.0
-
+  double mm = value.toDouble();
+  print("value as double: $mm"); // 100.0
 }
